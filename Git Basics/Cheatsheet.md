@@ -21,6 +21,24 @@ Update remote repository with local changes
 `git push` or  
 `git push origin main` for specificity, replace `main` with the current branch  
 
+### Branching
+
+You can create new branches using  
+`git branch <branch_name>`  
+To change to the new branch use  
+`git checkout <branch_name>`  
+To create a new branch and simultaneously switch to it, use the `-b` flag  
+`git checkout -b <branch_name>`  
+To view all current branches, or the current branch (*) use  
+`git branch`  
+If you're ready to merge branches, navigate to the target branch (e.g. main) and use `git merge` followed by the branch to be merged into the target, e.g.  
+`git checkout main`  
+`git merge <branch_name>`  
+Branches that have been merged into main can be deleted using  
+`git branch -d <branch_name>`  
+Branches not yet merged into main can be deleted with  
+`git branch -D <branch_name>`  
+
 ### Other commands
 
 `git status`  
